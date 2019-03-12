@@ -35,7 +35,7 @@
                     eventsFirstPushWindow:        10  // 10 sec
                 },
                 core: {
-                    authorizationKey: 'sh8g9dufij0j87g1spj6b3arrduvk2gpcnjv',
+                    authorizationKey: 'FIXME BROWSER KEY',
                     key: 'david',
                     trafficType: 'user',
                     labelsEnabled: true
@@ -59,18 +59,6 @@
                 });
 
                 client.on(client.Event.SDK_UPDATE, function () {
-                    console.log('The SDK has been updated!');
-                    //                    console.log('url: ' + window.location.href);
-                    //                    $.ajax({
-                    //                        url: window.location.href,
-                    //                        headers: {
-                    //                            "Pragma": "no-cache",
-                    //                            "Expires": -1,
-                    //                            "Cache-Control": "no-cache"
-                    //                        }
-                    //                    }).done(function () {
-                    //                        window.location.reload(true);
-                    //                    });
                     drawTable(client);
                 });
             }
@@ -123,7 +111,7 @@
 		            userid : users[i][j]
                         }
 
-                        var treatment = client.getTreatment('boxes', attributes);
+                        var treatment = client.getTreatment('FIXME SPLIT NAME', attributes);
                         console.log(treatment);
                         if (treatment === 'on') {                            
                             cells[j].style.backgroundColor = "rgb(0, 124, 156)";
