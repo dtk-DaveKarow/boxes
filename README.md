@@ -55,6 +55,41 @@ or the boxes won't update instantly
  - Return to the Split console and
 start rolling out to your boxes!
 
+TIPS AND TRICKS
+===============
+
+- Create a segment with a block of cells
+arranged together ahead of time.  Use
+the segment in the whitelisting and 
+targeting rules
+
+ - Play "whitelist bingo" with the 
+customer by having them throw out squares
+they'd like to see turn on.
+
+ - Don't use less than about 10% traffic
+allocation or the customers will count
+cells.  For the same reason, be especially
+careful about showing 50/50 allocation
+for less than 20% of the boxes. 
+
+ - The boxes demo knows about 'row' and
+'col' attributes.  In the targeting rules,
+you can ask if 'row' is letter a through j 
+is in a String list.  You can do the same for
+a number between 0 and 9 of a 'col' attribute.
+Don't get caught accidentally ANDing
+something you expect to be an OR.
+
+ - By planning ahead, you can illustrate
+dependencies too.  Make a second split 
+that whitelists only select cells.  From
+the main boxes grid, declare a dependency
+on the this split being on.  Flip boxes
+all on, and note that only select boxes
+turn on.  Why?  Now go show which boxes
+are whitelisted in the dependent split... 
+
 KNOWN PROBLEMS
 ==============
 
